@@ -99,6 +99,8 @@ Each of the version 2 programs include an error as well.
 
 ![Mac Example](screenshot.png)
 
-## My Example!
+## My Examples!
 ![Emily](EmilyExample.png)
+
+![Emily](EmilyExample2.PNG)
 

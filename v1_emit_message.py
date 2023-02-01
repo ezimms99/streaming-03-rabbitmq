@@ -18,7 +18,7 @@ channel = connection.channel()
 # use the channel to declare a queue
 channel.queue_declare(queue="hello")
 #Define the message you want to send
-mymessage = 'Heyooo!'
+mymessage = 'Hi! My name is Emily3!'
 # use the channel to publish a message to the queue
 channel.basic_publish(exchange='', routing_key='hello', body=mymessage)
 # print a message to the console for the user
