@@ -51,7 +51,7 @@ As long as the process is running, we cannot use this terminal for other command
 1. Do this several times to emit at least 3 different messages.
 
 
-![Alt text](../Module%203%20photo.JPG)
+!
 
 ## Version 1: Don't Repeat Yourself (DRY)
 
@@ -98,3 +98,6 @@ Each of the version 2 programs include an error as well.
 ## Multiple Terminals
 
 ![Mac Example](screenshot.png)
+
+![Emily Example](Module%203%20photo.png)
+
