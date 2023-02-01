@@ -1,4 +1,5 @@
 """
+Emily Zimmerman - 1/31 - This program listened for messages from the RabbitMQ server. 
 
 Always customize this docstring. 
 
@@ -28,22 +29,24 @@ Terminal Reminders
 
 # you can add multiple imports on one line 
 # but we don't recommend it for readability
-import pika, sys, os
+import pika
+import sys 
+import os
 
 
 # define a main function to run the program
 def main():
     # create a blocking connection to the RabbitMQ server
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHostt'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
     # use the connection to create a communication channel
     channel = connection.channel()
     # use the channel to declare a queue
     channel.queue_declare(queue='hello')
     # define a callback function to be called when a message is received
     def callback(ch, method, properties, body):
-        print(" [x] Received %r" % body.decode())
+        print(" [x] Received %r" % body)
     # use the channel to consume messages from the queue
-    channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='hello',  on_message_callback=callback, auto_ack=True)
     # print a message to the console for the user
     print(' [*] Waiting for messages. To exit press CTRL+C')
     # start consuming messages

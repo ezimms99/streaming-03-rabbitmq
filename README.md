@@ -74,20 +74,20 @@ and a consistent, reusable approach to building code.
 
 Each of the version 2 programs include an error as well. 
 
-1. Find the error and fix it. 
-1. Compare the structure of the version 2 files. 
-1. Modify the docstrings on all your files.
-1. Include your name and the date.
-1. Imports always go at the top, just after the file docstring.
-1. Imports should be one per line - why?
-1. Then, define your functions.
-1. Functions are reuable logic blocks.
+1. Find the error and fix it. Local host spelled incorrectly
+1. Compare the structure of the version 2 files. The version 2 files are laid out much better and allow for errors to occur with an error message that spits out. The version 2 emit also has a much more efficient way of loading the messages.  
+1. Modify the docstrings on all your files. Done!
+1. Include your name and the date. Done!
+1. Imports always go at the top, just after the file docstring. Done!
+1. Imports should be one per line - why? They are easier to read!
+1. Then, define your functions. 
+1. Functions are reusable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
+1. Which of the 4 files will always close() the connection? The two emit files will always close the connection. 
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. How many hits did you get? I got several million hits.
 1. Learn and understand this common Python idiom.
 
 ## Reference
