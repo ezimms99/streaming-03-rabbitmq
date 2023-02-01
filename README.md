@@ -50,6 +50,9 @@ As long as the process is running, we cannot use this terminal for other command
 1. Watch what happens in the listening window.
 1. Do this several times to emit at least 3 different messages.
 
+
+![Alt text](../Module%203%20photo.JPG)
+
 ## Version 1: Don't Repeat Yourself (DRY)
 
 1. Did you notice you had to change the message in two places?
