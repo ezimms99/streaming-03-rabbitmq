@@ -99,5 +99,5 @@ Each of the version 2 programs include an error as well.
 
 ![Mac Example](screenshot.png)
 
-![Emily Example](Module%203%20photo.png)
+![Emily Example](EmilyExample.png)
 
